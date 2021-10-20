@@ -17,7 +17,7 @@ namespace vtbbook.Controllers
         }
 
         [Route("ping")]
-        [HttpGet]
+        [HttpPost]
         public IActionResult SomePing([FromBody] RequestSomeModel request)
         {
             if (string.IsNullOrEmpty(request.SomeSender) || string.IsNullOrEmpty(request.SomeText))
